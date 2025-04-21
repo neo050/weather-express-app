@@ -1,67 +1,73 @@
-# Weather Express App
+Weather Express App
 
 A simple Node.js and Express application that fetches weather data from the OpenWeatherMap API and displays it in a web page.
 
-## Prerequisites
+Prerequisites
 
-- Node.js (>=14.x)
-- npm (comes with Node.js)
+Node.js (>=14.x)
 
-## Installation
+npm (comes with Node.js)
 
-1. **Clone the repository**
-   ```bash
-   https://github.com/appbrewery/public-api-lists.git
-   ```
-2. **Navigate into the project directory**
-   ```bash
-   cd weather-express-app
-   ```
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
+Installation
 
-## Configuration
+Clone the repository
+
+git clone https://github.com/<your-username>/weather-express-app.git
+
+Navigate into the project directory
+
+cd weather-express-app
+
+Install dependencies
+
+npm install
+
+Configuration
 
 The app requires an OpenWeatherMap API key to function. Supply it via an environment variable.
 
-- **Locally**: create a file named `.env` in the project root with the content:
-  ```env
-  API_KEY=your_openweathermap_api_key
-  ```
-  Then install the `dotenv` package and add `require('dotenv').config();` at the top of `index.js` (if not already).
+Locally: create a file named .env in the project root with the content:
 
-- **On Render**: go to your Web Service settings → Environment → Add Variable:
-  - **Key**: `API_KEY`
-  - **Value**: `your_openweathermap_api_key`
+API_KEY=your_openweathermap_api_key
 
-## Available Scripts
+Then install the dotenv package and add require('dotenv').config(); at the top of index.js (if not already).
 
-- **Start the server**
-  ```bash
-  npm start
-  ```
-  Runs `node index.js`.
+On Render: go to your Web Service settings → Environment → Add Variable:
 
-- **Start in development mode** (with auto-restart using nodemon)
-  ```bash
-  npm run dev
-  ```
-  Runs `nodemon index.js` (requires `nodemon` installed either locally or globally).
+Key: API_KEY
 
-## Usage
+Value: your_openweathermap_api_key
 
-1. Open your browser and visit:
-   ```
-   http://localhost:3008
-   ```
-2. Enter a country and city in the form and click **Find the weather**.
-3. The page will display the current weather description, temperature (°C), feels-like temperature, and min/max values.
+Available Scripts
 
-## Project Structure
+Start the server
 
-```
+npm start
+
+Runs node index.js.
+
+Start in development mode (with auto-restart using nodemon)
+
+npm run dev
+
+Runs nodemon index.js (requires nodemon installed either locally or globally).
+
+Usage
+
+You can also find the live application at: https://weather-express-app-5dp9.onrender.com
+
+
+
+Open your browser and visit:
+
+http://localhost:3008
+
+Enter a country and city in the form and click Find the weather.
+
+The page will display the current weather description, temperature (°C), feels-like temperature, and min/max values.
+
+Project Structure
+
 weather-express-app/
 ├── public/              # Static assets (CSS, images)
 │   └── styles/main.css
@@ -71,9 +77,8 @@ weather-express-app/
 ├── index.js             # Main application file
 ├── package.json         # Project metadata and scripts
 └── README.md            # This file
-```
 
-## License
+License
 
 This project is licensed under the MIT License.
 
