@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body class="flex-body">
+   
+    <div class="flex card">
+        <p class="main-title">Check the Weather</p>
+            <form id="myForm" method="post">
+                <label for="countryInput">In which country:</label>
+                <input type="text" id="countryInput" required name="country">
+                <label for="cityInput">In which city:</label>
+                <input type="text" id="cityInput" name="city" required>
+                <button id="post" value="POST" type="submit" formaction="get-weather">Find the weather</button>
+            </form>
+        
+
+            <% if(locals.data){ %>
+                
+                    <div>
+                        <p class="description Details">
+                            <%= data.description %>
+                        </p>
+                        <p class="temp Details"> 
+                            <%= data.temp%>°C
+                        </p>
+                    
+                        <p class="Details">
+                            feels like:  <%= data.feels_like  %>°C
+                        </p>
+
+                        <p class="Details">
+                            minimum temperature:  <%= data.temp_min %>°C
+                        </p>
+
+                        <p class="Details">
+                            maximum temperature:  <%= data.temp_max  %>°C
+                        </p>
+
+                   </div>
+            <% } %>
+
+            <% if(locals.error){ %>
+
+                <p class="Details">
+                    <%= error %>
+                </p>
+
+            <% } %>
+
+    </div>
+
+
+      
+
+
+</body>
+</html>

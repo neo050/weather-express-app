@@ -1,0 +1,106 @@
+
+p,label,button
+{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size:larger;
+    line-height:1.6;
+}
+
+.main-title{
+    font-size: 2rem; font-weight: 600;
+    color: #333333;
+
+}
+
+.description,.temp
+{
+    display: inline;
+}
+label
+{
+    font-size: 1rem; font-weight: 550;
+    color: #333333;
+}
+
+.flex,#myForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* הגדל לרווח נוח */
+    align-items: center;
+    padding: 2rem 1rem;
+    
+   
+}
+#myForm{
+    margin-bottom: 3rem;
+}
+
+input{
+    border-radius: 10%;
+}
+button
+{
+    border-radius: 10%;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    background-color: #3A7CA0;
+    border-color:#3A7CA0
+   
+}
+html, body {
+    height: 100%;        /* כדי שה־body יגרור גובה מלא של החלון */
+    margin: 0;
+  }
+  
+  body {
+    background-image: url("../photos/bakr.jpg");
+    background-repeat: no-repeat;         /* שלא יחזור על עצמו */
+    background-position: center center;   /* ימוקם במרכז לגובה ולרוחב */
+    background-size: cover; 
+  }
+
+
+  .card {
+    background: rgba(255,255,255,0.8);
+    padding: 4rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: auto;
+    width: 100%;
+    padding: 2rem ;
+    
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+  }
+  
+  .flex-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .Details
+  {
+    font-size: 0.9rem; font-weight: 700;
+  }
+
+  @media(max-width: 480px) {
+    .card { padding: 1rem; }
+    .main-title { font-size: 1.5rem; }
+  }
+  
+
+  button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
