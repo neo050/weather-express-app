@@ -94,7 +94,7 @@ html, body {
   }
 
   @media(max-width: 480px) {
-    .card { padding: 1rem; }
+    .card { padding: 1rem; margin: 2rem;}
     .main-title { font-size: 1.5rem; }
   }
   
