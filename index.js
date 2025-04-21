@@ -2,6 +2,8 @@ import express, { response } from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 
+import dotenv from "dotenv";
+dotenv.config();
 const app =express();
 const port = process.env.PORT || 3008;
 app.use(express.static("public"));
