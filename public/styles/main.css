@@ -104,3 +104,26 @@ html, body {
     transform: translateY(-2px);
   }
   
+  /* Error message styling */
+  .error {
+  /* רקע אדמדם חצי־שקוף */
+  background-color: rgba(255, 0, 0, 0.1);
+  /* טקסט אדום כהה לקריאות */
+  color: #8B0000;
+  /* גבול עדין מסביב */
+  border: 1px solid #8B0000;
+  /* רדיוס רך לפינות */
+  border-radius: 0.5rem;
+  /* ריווח פנימי */
+  padding: 0.75rem 1rem;
+  /* רוחב מקסימלי כדי שלא יתארך יותר מדי */
+  max-width: 360px;
+  /* מיקום מרכזי ביחס לאלמנט ההורה */
+  margin: 1rem auto;
+  /* טקסט במרכז */
+  text-align: center;
+  /* אותן הגדרות טיפוגרפיה שיש לך כבר */
+  font-family: "Newsreader", serif;
+  font-size: larger;
+  line-height: 1.4;
+}
