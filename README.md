@@ -11,7 +11,7 @@ A simple Node.js and Express application that fetches weather data from the Open
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/weather-express-app.git
+   git clone https://github.com/neo050/weather-express-app.git
    ```
 2. **Navigate into the project directory**
    ```bash
@@ -32,7 +32,8 @@ The app requires an OpenWeatherMap API key to function. Supply it via an environ
   API_KEY=your_openweathermap_api_key
   ```
 
-  Then install the `dotenv` package and add `require('dotenv').config();` at the top of `index.js` (if not already).
+  Then install the `dotenv` package and add `require('dotenv').config();`/`import dotenv from "dotenv";`
+`dotenv.config();` at the top of `index.js` (if not already).
 
 - **On Render**: go to your Web Service settings → Environment → Add Variable:
 
